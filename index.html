@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Js</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ini buat import CSS nya ya cantikkk -->
+</head>
+<body>
+
+    <h1>Program kalkulator javascript</h1>
+    <div class="formstyle"> 
+        <form name="form1"> <!-- ini form untuk buat kalkulator nya -->
+            
+            <!-- input teks ini gunanya buat nampilin teks dan hasil perhitungan-->
+            <input type="text" id="calc" name="answer"> 
+            <br><br>
+            
+            <!-- nah disini kamu buat tombol input guna nya buat angka dan operator buat kalkulator nya -->
+            <input type="button" value="1" onclick="form1.answer.value += '1'"> <!-- nambah angka 1 ke field teks -->
+            <input type="button" value="2" onclick="form1.answer.value += '2'"> <!-- nambah angka 2 ke field teks -->
+            <input type="button" value="3" onclick="form1.answer.value += '3'"> <!-- nambah angka 3 ke field teks -->
+            <input type="button" value="+" onclick="form1.answer.value += '+'"> <!-- nambah tanda tambah (+) ke field teks -->
+
+            <br><br>
+
+            <input type="button" value="4" onclick="addToDisplay('4')">  <!-- nah ini versi rapih nya ketimbang kita pake yg atas, karena ini diambil dari file script.js-->
+
+            <!--nah ini tombol buat kalkulasi -->
+            <!-- Mas jelasin satu satu yaa -->
+             <!-- onclick itu maksudnya adalah action yang dilakuin ketika kita tombol '=' di klik -->
+              <!-- form1.answer.value itu mas bagi lagi penjelasan nya:
+              1. form1 dapat dari <form nama="form1" (yang diatas itu loh)  yang mana tempat semua elemen kalkulator nya berada.
+              2. answer gunanya buat nampilin ekspresi matematika yang di input sama kamu saat kamu klik tombol angka / operator
+              3. form1.answer.value ngambil dari input teks answer, misal kalo kamu ngetik "24+26", form1.answer.value bentuknya jadi string "24+26"
+              4. eval(form1.answer.value): ketika  eval(form1.answer.value) ngitung hasil ekspresi, hasilnya misal (50 karena 24+26 kann 50) itu bakal disimpan kembali ke form1.answer.value
+              -->
+            <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)"> <!-- Mengevaluasi ekspresi dalam field teks -->
+            <br>
+            
+            <!-- nah tombol ini fungsinya buat ngehapus semua operator matematika kita tadi -->
+            <input type="button" value="Clear All" onclick="form1.answer.value = ''" id="clear"> <!-- Mengosongkan field teks -->
+            <br>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
