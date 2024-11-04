@@ -1,18 +1,18 @@
-// Fungsi untuk menambahkan angka atau simbol ke dalam field teks
+// Fungsi buat nambahin angka atau simbol ke dalam field teks
 function addToDisplay(value) {
     document.getElementById('calc').value += value;
 }
 
-// Fungsi untuk menghitung hasil dari ekspresi
+// Fungsi buat ngitung hasil ekspresi (+, -, *, :)
 function calculateResult() {
     try {
         document.getElementById('calc').value = eval(document.getElementById('calc').value);
     } catch (error) {
-        document.getElementById('calc').value = "Error"; // Menampilkan "Error" jika ekspresi tidak valid
+        document.getElementById('calc').value = "Error"; // nampilin error aja 
     }
 }
 
-// Fungsi untuk menghapus semua isi dari field teks
+// Fungsi buat ngapus hasil input field teks
 function clearDisplay() {
     document.getElementById('calc').value = ''; // Mengosongkan field teks
 }
