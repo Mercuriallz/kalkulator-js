@@ -1,16 +1,16 @@
 h1 {  
     text-align: center;  
     padding: 23px;  
-    background-color: skyblue;  
+    background-color: #6E6D69;  
     color: white;  
     }  
   
 #clear{  
 width: 270px;  
-border: 3px solid gray;  
+border: 3px solid #6E6D69;  
     border-radius: 3px;  
     padding: 20px;  
-    background-color: red;  
+    background-color: #7c7366;  
 }  
   
 .formstyle  
@@ -18,7 +18,7 @@ border: 3px solid gray;
 width: 300px;  
 height: 530px;  
 margin: auto;  
-border: 3px solid skyblue;  
+border: 3px solid #6E6D69;  
 border-radius: 5px;  
 padding: 20px;  
 }  
@@ -28,7 +28,7 @@ padding: 20px;
 input  
 {  
 width: 20px;  
-background-color: green;  
+background-color: #DDB2B5;  
 color: white;  
 border: 3px solid gray;  
     border-radius: 5px;  
@@ -40,7 +40,7 @@ border: 3px solid gray;
   
 #calc{  
 width: 250px;  
-border: 5px solid black;  
+border: 5px solid #6E6D69;  
     border-radius: 3px;  
     padding: 20px;  
     margin: auto;  
