@@ -15,8 +15,8 @@ border: 3px solid #6E6D69;
   
 .formstyle  
 {  
-width: 300px;  
-height: 530px;  
+width: 280px;  
+height: 570px;  
 margin: auto;  
 border: 3px solid #6E6D69;  
 border-radius: 5px;  
@@ -39,7 +39,7 @@ border: 3px solid gray;
   
   
 #calc{  
-width: 250px;  
+width: 230px;  
 border: 5px solid #6E6D69;  
     border-radius: 3px;  
     padding: 20px;  
