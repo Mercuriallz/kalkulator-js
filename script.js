@@ -16,3 +16,4 @@ function calculateResult() {
 function clearDisplay() {
     document.getElementById('calc').value = ''; // Mengosongkan field teks
 }
+
