@@ -12,6 +12,12 @@ function calculateResult() {
     }
 }
 
+function deleteOneChar() {
+    const inputField = document.form1.answer;
+    inputField.value = inputField.value.slice(0, -1);
+    
+}
+
 // Fungsi buat ngapus hasil input field teks
 function clearDisplay() {
     document.getElementById('calc').value = ''; // Mengosongkan field teks
